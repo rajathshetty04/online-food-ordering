@@ -1,0 +1,129 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Bree Serif", serif;
+}
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+
+  z-index: -1;
+  opacity: 0.7;
+}
+.navigation {
+  display: flex;
+}
+.item {
+  list-style: none;
+}
+.item a {
+  font-size: 1.1rem;
+  color: white;
+  display: block;
+  padding: 4px 10px;
+  margin: 10px 2px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.item a:hover {
+  color: black;
+  background-color: white;
+  transform: scale(1.1);
+}
+#home {
+  font-size: 1.4rem;
+  text-shadow: 1px 1px black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  padding: 20px;
+  /* margin: 50px 0px; */
+  justify-content: center;
+  align-items: center;
+}
+#home::before {
+  content: "";
+  background: url("bg1.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  height: 550px;
+  width: 100%;
+  opacity: 0.85;
+  z-index: -1;
+}
+#services-container {
+  margin-top: 80px;
+}
+#services {
+  margin: 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.box {
+  border: 2px solid brown;
+  background-color: rgb(241, 234, 227);
+  padding: 30px;
+  margin: 3px 10px;
+  border-radius: 15px;
+  width: 300px;
+}
+.box img {
+  height: 130px;
+  margin: auto;
+  display: block;
+}
+
+/* contact */
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  padding: 2px;
+}
+#orderNowButton {
+  font-size: 1.1rem;
+  padding: 5px 17px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  margin: 15px;
+  transition: all 0.5s;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+.center {
+  text-align: center;
+}
